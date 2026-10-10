@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0500">
+    
+    <TextView android:id="@+id/topHud" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_marginTop="22dp" android:text="U L T R O N  //  ONLINE" android:textColor="#FF6D00" android:letterSpacing="0.3" android:fontFamily="monospace" android:textSize="16sp"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/topHud" android:layout_centerHorizontal="true" android:text="● ONLINE • ARMED • LISTENING" android:textColor="#FFAB40" android:textSize="10sp" android:fontFamily="monospace"/>
+
+    <ImageView android:id="@+id/arcReactor" android:layout_width="210dp" android:layout_height="210dp" android:layout_centerInParent="true" android:src="@drawable/bg_reactor_orange"/>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="220dp" android:layout_alignParentBottom="true" android:layout_marginBottom="130dp" android:layout_margin="10dp" android:background="@drawable/bg_glass_orange" android:padding="10dp">
+        <TextView android:id="@+id/chatText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ULTRON: I am online, Sir." android:textColor="#FFE0B2" android:fontFamily="monospace"/>
+    </ScrollView>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:orientation="vertical" android:padding="10dp" android:background="#0A0500">
+        <EditText android:id="@+id/inputField" android:layout_width="match_parent" android:layout_height="48dp" android:background="@drawable/bg_glass_orange" android:hint="Talk to ULTRON..." android:textColor="#FFFFFF" android:hintTextColor="#FF8A65" android:paddingLeft="15dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="7dp">
+            <Button android:id="@+id/btnMic" android:layout_width="0dp" android:layout_height="42dp" android:layout_weight="1" android:text="MIC / VOICE" android:textColor="#FF6D00" android:background="@drawable/bg_btn_orange"/>
+            <Button android:id="@+id/btnSend" android:layout_width="0dp" android:layout_height="42dp" android:layout_weight="1" android:layout_marginStart="8dp" android:text="SEND" android:textColor="#000000" android:background="@drawable/bg_btn_orange_active"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="6dp">
+            <Button android:id="@+id/btnBgListening" android:layout_width="0dp" android:layout_height="42dp" android:layout_weight="1" android:text="BACKGROUND LISTENING" android:textSize="10sp" android:textColor="#FF6D00" android:background="@drawable/bg_btn_orange"/>
+            <Button android:id="@+id/btnSettings" android:layout_width="0dp" android:layout_height="42dp" android:layout_weight="1" android:layout_marginStart="8dp" android:text="ANDROID SETTINGS" android:textSize="10sp" android:textColor="#FF6D00" android:background="@drawable/bg_btn_orange"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
